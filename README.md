@@ -1,1 +1,1 @@
-studio practice of alice fang and jaclyn saik
+the design practice of alice fang and jaclyn saik
