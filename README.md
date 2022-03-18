@@ -1,1 +1,1 @@
-# studio practice of alice fang and jaclyn saik
+studio practice of alice fang and jaclyn saik

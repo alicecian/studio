@@ -3,11 +3,21 @@
 /* CUSTOM CSS */
 
 * {
-	font-family: 'Times New Roman', Times, serif;
+	/* font-family: 'Times New Roman', Times, serif; */
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	box-sizing: border-box;
 	--text-color: rgb(1, 40, 4);
 }
 
+p, a {
+	color: blue;
+	font-size: 20px;
+	margin: auto 3rem;
+}
+
+a:hover {
+	text-decoration-style: wavy;
+}
 
 /* m desktop */
 @media (min-width: 701px) {
