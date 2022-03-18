@@ -22,6 +22,16 @@ a:hover {
 	text-decoration-style: wavy;
 }
 
+.modal {
+	display: none;
+}
+
+.modal.active {
+	display: block;
+	margin-top: 10px;
+    margin-left: 3rem;
+}
+
 /* m desktop */
 @media (min-width: 701px) {
 
