@@ -12,6 +12,9 @@
 p, a {
 	color: blue;
 	font-size: 20px;
+}
+
+p {
 	margin: auto 3rem;
 }
 
