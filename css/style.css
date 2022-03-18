@@ -22,14 +22,16 @@ a:hover {
 	text-decoration-style: wavy;
 }
 
-.modal {
-	display: none;
-}
+span {color: blue; font-size: 16px;}
+.modal {display: none;}
 
 .modal.active {
 	display: block;
 	margin-top: 10px;
     margin-left: 3rem;
+	border: blue 1px solid;
+	width: fit-content;
+	padding: 3px;
 }
 
 /* m desktop */
