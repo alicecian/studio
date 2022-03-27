@@ -1,51 +1,51 @@
 @import 'normalize.css';
 
-/* CUSTOM CSS */
-@font-face {
-	font-family: "BradfordLLWebTrial-Regular";
-	src: url("BradfordLLWebTrial-Regular.woff") format("woff");
-}
 * {
-	/* font-family: 'Times New Roman', Times, serif; */
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Spectral', serif;
+	/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 	box-sizing: border-box;
-	--text-color: rgb(1, 40, 4);
 }
 
-p, a {
-	color: blue;
-	/* font-size: 20px; */
-	font-size: 8rem;
-	line-height: 0.75;
-	overflow-x: hidden;
-}
+body {
+	background: #C6EEC6;
+	background: -webkit-linear-gradient(top left, #C6EEC6, #839925);
+	background: -moz-linear-gradient(top left, #C6EEC6, #839925);
+	background: linear-gradient(to bottom right, #C6EEC6, #839925);
 
-p {
-	/* margin: auto 3rem; */
+	height: 100vh;
 	margin: 0;
 }
 
-a:hover {
-	text-decoration-style: wavy;
+.container {
+	margin: 1rem;
 }
 
-span {color: blue; font-size: 16px;}
-/* .modal {display: none;}
+/* default mobile */
+h3, a, span {
+	color: white;
+	font-size: 3rem;
+	line-height: 1;
+	margin: 0;
+	font-weight: 300;
+}
 
-.modal.active {
-	display: block;
-	margin-top: 10px;
-    margin-left: 3rem;
-	border: blue 1px solid;
-	width: fit-content;
-	padding: 3px;
-} */
+a {
+	text-decoration-thickness: 2px;
+}
+
+.special {
+	font-style: italic;
+}
 
 /* m desktop */
 @media (min-width: 701px) {
-	p, a {
-		font-size: 10rem;
-		line-height: 0.75;
+	h3, a, span {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	a:hover {
+		text-decoration-style: wavy;
 	}
 
 }
