@@ -1,7 +1,10 @@
 @import 'normalize.css';
 
 /* CUSTOM CSS */
-
+@font-face {
+	font-family: "BradfordLLWebTrial-Regular";
+	src: url("BradfordLLWebTrial-Regular.woff") format("woff");
+}
 * {
 	/* font-family: 'Times New Roman', Times, serif; */
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -11,11 +14,14 @@
 
 p, a {
 	color: blue;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: 8rem;
+	line-height: 0.75;
 }
 
 p {
-	margin: auto 3rem;
+	/* margin: auto 3rem; */
+	margin: 0;
 }
 
 a:hover {
@@ -23,7 +29,7 @@ a:hover {
 }
 
 span {color: blue; font-size: 16px;}
-.modal {display: none;}
+/* .modal {display: none;}
 
 .modal.active {
 	display: block;
@@ -32,10 +38,14 @@ span {color: blue; font-size: 16px;}
 	border: blue 1px solid;
 	width: fit-content;
 	padding: 3px;
-}
+} */
 
 /* m desktop */
 @media (min-width: 701px) {
+	p, a {
+		font-size: 10rem;
+		line-height: 0.75;
+	}
 
 }
 
