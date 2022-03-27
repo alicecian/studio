@@ -17,6 +17,7 @@ p, a {
 	/* font-size: 20px; */
 	font-size: 8rem;
 	line-height: 0.75;
+	overflow-x: hidden;
 }
 
 p {
