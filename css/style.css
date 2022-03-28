@@ -31,22 +31,27 @@ h3, a, span {
 }
 
 a {
-	text-decoration-thickness: 2px;
+	text-decoration: none;
+	transition: .25s opacity ease;
 }
 
 .special {
 	font-style: italic;
 }
 
+@media (hover:hover) {
+	a:hover {
+		/* text-decoration-style: wavy; */
+		opacity: 0.25;
+		transition: .25s opacity ease;
+	}
+} 
+
 /* m desktop */
 @media (min-width: 701px) {
 	h3, a, span {
-		font-size: 3rem;
-		line-height: 1;
-	}
-
-	a:hover {
-		text-decoration-style: wavy;
+		/* font-size: 3rem; */
+		/* line-height: 1; */
 	}
 
 }
