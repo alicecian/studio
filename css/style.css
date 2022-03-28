@@ -7,10 +7,11 @@
 }
 
 body {
-	background: #C6EEC6;
-	background: -webkit-linear-gradient(top left, #C6EEC6, #839925);
-	background: -moz-linear-gradient(top left, #C6EEC6, #839925);
-	background: linear-gradient(to bottom right, #C6EEC6, #839925);
+	/* Created with https://www.css-gradient.com */
+	background: blue;
+	background: -webkit-linear-gradient(top left, blue, black);
+	background: -moz-linear-gradient(top left, blue, black);
+	background: linear-gradient(to bottom right, blue, black);
 
 	height: 100vh;
 	margin: 0;
