@@ -1,5 +1,16 @@
-const modal = document.querySelector('.modal');
+// Get the root element
+var r = document.querySelector(':root');
 
-$("a.toHover").hover(function() {
-    modal.classList.toggle('active');
-})
+// Create a function for getting a variable value
+function variable_get() {
+  // Get the styles (properties and values) for the root
+  var rs = getComputedStyle(r);
+  // Alert the value of the --blue variable
+  alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+}
+
+// Create a function for setting a variable value
+function variable_set() {
+  // Set the value of variable --blue to another value (in this case "lightblue")
+  r.style.setProperty('--blue', 'lightblue');
+}

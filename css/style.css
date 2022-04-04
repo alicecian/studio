@@ -1,33 +1,41 @@
 @import 'normalize.css';
 
-* {
-	font-family: 'Spectral', serif;
-	/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+:root {
+	--Spectral: 'Spectral', serif;
+	--Karla: 'Karla', sans-serif;
+
+	--large-type: 3rem;
+	--superscript-type: calc(var(--large-type)/1.5);
+
+	--blue: #001DDF;
+	--purple: #6D6DD6;
+	--stone: #9D9C9E;
+	--teal: #1A858C;
+	--forest: #3C5218;
+
 	box-sizing: border-box;
 }
 
 body {
-	/* Created with https://www.css-gradient.com */
-	background: blue;
-	background: -webkit-linear-gradient(top left, blue, black);
-	background: -moz-linear-gradient(top left, blue, black);
-	background: linear-gradient(to bottom right, blue, black);
-
+	background-color: var(--purple);
 	height: 100vh;
 	margin: 0;
 }
 
-.container {
+main {
 	margin: 1rem;
+	border: 1px solid yellow;
 }
 
-/* default mobile */
-h3, a, span {
-	color: white;
-	font-size: 3rem;
-	line-height: 1;
-	margin: 0;
-	font-weight: 300;
+footer {
+	font-family: var(--Karla);
+	margin: 1rem;
+	border: 1px solid yellowgreen;
+}
+
+h3 {
+	font-family: var(--Spectral);
+	font-weight: 100;
 }
 
 a {
@@ -35,28 +43,58 @@ a {
 	transition: .25s opacity ease;
 }
 
-.special {
-	font-style: italic;
+/* ------------- default mobile ------------- */
+
+/* fixed intro */
+.fixed.main h3,
+.fixed.main a,
+.fixed.main span {
+	color: white;
+	font-size: var(--large-type);
+	line-height: 1;
+	margin: 0;
 }
 
+.special {
+	font-family: var(--Karla);
+}
+
+.fixed.main span.superscript {
+	vertical-align: super; 
+	font-size: var(--superscript-type);
+}
+
+/* footnotes column */
+ol.list {
+	border: 1px solid salmon;
+}
+
+.list li {
+	color: white;
+	font-family: var(--Karla);
+}
+
+/* hover */
 @media (hover:hover) {
 	a:hover {
-		/* text-decoration-style: wavy; */
 		opacity: 0.25;
 		transition: .25s opacity ease;
 	}
 } 
 
-/* m desktop */
-@media (min-width: 701px) {
-	h3, a, span {
-		/* font-size: 3rem; */
-		/* line-height: 1; */
-	}
 
+
+
+/* ------------- m desktop ------------- */
+@media (min-width: 700px) {
 }
 
-/* lg desktop */
+/* ------------- lg desktop ------------- */
 @media (min-width: 1024px) {
+	
+}
+
+/* ------------- xlg desktop ------------- */
+@media (min-width: 1400px) {
 	
 }
