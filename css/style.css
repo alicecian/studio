@@ -6,7 +6,8 @@
 
 	--text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);;
 	--large-type: 3rem;
-	--superscript-type: calc(var(--large-type)/1.5);
+	--Karla-large-type: calc(var(--large-type)*0.9);
+	--superscript-type: calc(var(--Karla-large-type)/1.75);
 
 	--blue: #001DDF;
 	--purple: #6D6DD6;
@@ -38,6 +39,7 @@ footer {
 	font-family: var(--Karla);
 	color: white;
 	margin: 1rem;
+	text-shadow: var(--text-shadow);
 	/* border: 1px solid yellowgreen; */
 }
 
@@ -59,12 +61,19 @@ a {
 /* ------------- default mobile ------------- */
 
 /* fixed intro */
-.fixed.main h3,
-.fixed.main a,
-.fixed.main span {
+.fixed.main h3 {
 	text-shadow: var(--text-shadow);
 	color: white;
 	font-size: var(--large-type);
+	line-height: 1;
+	margin: 0;
+}
+
+.fixed.main a,
+.fixed.main button {
+	text-shadow: var(--text-shadow);
+	color: white;
+	font-size: var(--Karla-large-type);
 	line-height: 1;
 	margin: 0;
 }
@@ -90,7 +99,7 @@ ol.list {
 	text-shadow: var(--text-shadow);
 	font-family: var(--Karla);
 	padding-bottom: 10px;
-	font-size: 1.5rem;
+	font-size: var(--superscript-type);
 }
 .list li.active {
 	visibility: visible;
@@ -108,10 +117,12 @@ ol.list {
 
 /* hover */
 @media (hover:hover) {
+	button:hover, 
 	a:hover {
 		opacity: 0.25;
 		transition: .25s opacity ease;
 	}
+
 } 
 
 
