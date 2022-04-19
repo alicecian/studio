@@ -20,8 +20,8 @@
 
 body {
 	/* background-color: var(--purple); */
-	background-image: url('../images/hills_of_west_virginia_nat_geo_june1976.jpg');
-	/* background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg'); */
+	/* background-image: url('../images/hills_of_west_virginia_nat_geo_june1976.jpg'); */
+	background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg');
 	height: 400vh;
 	/* height: 100%; */
 	width: 100%;
@@ -56,6 +56,17 @@ h3 {
 a {
 	text-decoration: none;
 	transition: .25s opacity ease;
+}
+
+.credit {
+	position: fixed;
+	bottom: 1rem;
+	font-family: var(--Karla);
+	text-shadow: var(--text-shadow);
+	color: white;
+	font-size: var(--superscript-type);
+	line-height: 1;
+	margin: 1rem;
 }
 
 /* ------------- default mobile ------------- */
