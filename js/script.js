@@ -1,16 +1,40 @@
-// Get the root element
-var r = document.querySelector(':root');
+const body = document.querySelector("body");
+console.log(body);
 
-// Create a function for getting a variable value
-function variable_get() {
-  // Get the styles (properties and values) for the root
-  var rs = getComputedStyle(r);
-  // Alert the value of the --blue variable
-  alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+// match
+function Match(item, array) {
+    let index;
+    let id = item.id
+    let active = null
+
+    for (var i = 0; i < array.length; i++) {
+        let match = array[i].getAttribute('data-index-number')
+        if (id === match) {
+            active = array[i]
+            index = i;
+        }
+        array[i].classList.remove('active')
+    }
+
+    if (active) {
+        active.classList.add('active')
+    }
 }
 
-// Create a function for setting a variable value
-function variable_set() {
-  // Set the value of variable --blue to another value (in this case "lightblue")
-  r.style.setProperty('--blue', 'lightblue');
-}
+const sidenotes = document.querySelectorAll(".sidenote");
+console.log(sidenotes);
+
+$(sidenotes).mouseover(function() {
+    let index = $(this).attr("data-index-number");
+    console.log(index);
+
+    $('.list li').each(function() {
+        let sidenoteNum = $(this).attr("data-index-number");
+        if (sidenoteNum == index) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        } 
+    });
+   
+});

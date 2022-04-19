@@ -4,6 +4,7 @@
 	--Spectral: 'Spectral', serif;
 	--Karla: 'Karla', sans-serif;
 
+	--text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);;
 	--large-type: 3rem;
 	--superscript-type: calc(var(--large-type)/1.5);
 
@@ -17,20 +18,32 @@
 }
 
 body {
-	background-color: var(--purple);
-	height: 100vh;
+	/* background-color: var(--purple); */
+	background-image: url('../images/hills_of_west_virginia_nat_geo_june1976.jpg');
+	/* background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg'); */
+	height: 400vh;
+	/* height: 100%; */
+	width: 100%;
 	margin: 0;
+
+	background-size: cover; 
 }
 
 main {
 	margin: 1rem;
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 }
 
 footer {
 	font-family: var(--Karla);
+	color: white;
 	margin: 1rem;
-	border: 1px solid yellowgreen;
+	/* border: 1px solid yellowgreen; */
+}
+
+button {
+	font-family: var(--Karla);
+	color: white;
 }
 
 h3 {
@@ -49,14 +62,16 @@ a {
 .fixed.main h3,
 .fixed.main a,
 .fixed.main span {
+	text-shadow: var(--text-shadow);
 	color: white;
 	font-size: var(--large-type);
 	line-height: 1;
 	margin: 0;
 }
 
-.special {
+.sidenote {
 	font-family: var(--Karla);
+	pointer-events: initial;
 }
 
 .fixed.main span.superscript {
@@ -64,12 +79,29 @@ a {
 	font-size: var(--superscript-type);
 }
 
-/* footnotes column */
+/* sidenotes column */
 ol.list {
-	border: 1px solid salmon;
+	/* border: 1px solid salmon; */
 }
 
 .list li {
+	visibility: hidden;
+	color: white;
+	text-shadow: var(--text-shadow);
+	font-family: var(--Karla);
+	padding-bottom: 10px;
+	font-size: 1.5rem;
+}
+.list li.active {
+	visibility: visible;
+}
+
+/* nav bar */
+.nav {
+	/* border: 1px solid pink; */
+}
+
+.nav button {
 	color: white;
 	font-family: var(--Karla);
 }
@@ -83,11 +115,34 @@ ol.list {
 } 
 
 
+section.top {
+	display: flex;
+	flex-direction: column;
+}
 
 
 /* ------------- m desktop ------------- */
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+	section.top {
+		flex-direction: row;
+	}
+	
+	.main {
+		width: 600px;
+    	margin-right: 20px;
+    	/* border: 1px solid blue; */
+	}
+
+	.sidenotes {
+		min-width: 250px;
+		max-width: 300px;
+	}
+
+
 }
+
+
+
 
 /* ------------- lg desktop ------------- */
 @media (min-width: 1024px) {
