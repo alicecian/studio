@@ -93,11 +93,14 @@ a {
 	font-family: var(--Karla);
 	pointer-events: initial;
 }
-
-.fixed.main span.superscript {
+sup {
 	vertical-align: super; 
 	font-size: var(--superscript-type);
 }
+/* .fixed.main span.superscript {
+	vertical-align: super; 
+	font-size: var(--superscript-type);
+} */
 
 /* sidenotes column */
 ol.list {
