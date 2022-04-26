@@ -21,8 +21,9 @@
 body {
 	/* background-color: var(--purple); */
 	/* background-image: url('../images/hills_of_west_virginia_nat_geo_june1976.jpg'); */
-	background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg');
-	height: 400vh;
+	/* background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg'); */
+	background-image: url('../images/riso-toned-cloud.jpg');
+	height: 200vh;
 	/* height: 100%; */
 	width: 100%;
 	margin: 0;
@@ -93,14 +94,11 @@ a {
 	font-family: var(--Karla);
 	pointer-events: initial;
 }
+
 sup {
 	vertical-align: super; 
 	font-size: var(--superscript-type);
 }
-/* .fixed.main span.superscript {
-	vertical-align: super; 
-	font-size: var(--superscript-type);
-} */
 
 /* sidenotes column */
 ol.list {
