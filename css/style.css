@@ -4,30 +4,20 @@
 	--Spectral: 'Spectral', serif;
 	--Karla: 'Karla', sans-serif;
 
-	--text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);;
-	--large-type: 3rem;
+	--text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+	--large-type: 2rem;
 	--Karla-large-type: calc(var(--large-type)*0.9);
 	--superscript-type: calc(var(--Karla-large-type)/1.75);
-
-	--blue: #001DDF;
-	--purple: #6D6DD6;
-	--stone: #9D9C9E;
-	--teal: #1A858C;
-	--forest: #3C5218;
 
 	box-sizing: border-box;
 }
 
 body {
-	/* background-color: var(--purple); */
-	/* background-image: url('../images/hills_of_west_virginia_nat_geo_june1976.jpg'); */
-	/* background-image: url('../images/new_zealand_dusky_sound_nat_geo_sept1971.jpg'); */
 	background-image: url('../images/riso-toned-cloud.jpg');
 	height: 200vh;
 	/* height: 100%; */
 	width: 100%;
 	margin: 0;
-
 	background-size: cover; 
 }
 
@@ -102,6 +92,8 @@ sup {
 
 /* sidenotes column */
 ol.list {
+	padding: 0px;
+	margin: 1em;
 	/* border: 1px solid salmon; */
 }
 
@@ -137,15 +129,21 @@ ol.list {
 
 } 
 
-
 section.top {
 	display: flex;
 	flex-direction: column;
 }
 
 
-/* ------------- m desktop ------------- */
+/* ---------------------- m desktop --------------------- */
 @media (min-width: 900px) {
+
+	:root {
+		--large-type: 3rem;
+		--Karla-large-type: calc(var(--large-type)*0.9);
+		--superscript-type: calc(var(--Karla-large-type)/1.75);
+	}
+
 	section.top {
 		flex-direction: row;
 	}
@@ -156,15 +154,18 @@ section.top {
     	/* border: 1px solid blue; */
 	}
 
+	ol.list {
+		display: block;
+		padding-left: 40px;
+		margin: 0;
+	}
+
 	.sidenotes {
 		min-width: 250px;
 		max-width: 300px;
 	}
 
-
 }
-
-
 
 
 /* ------------- lg desktop ------------- */
