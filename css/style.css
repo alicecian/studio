@@ -71,7 +71,7 @@ a {
 	margin: 0;
 }
 
-.fixed.main a,
+/* .fixed.main a, */
 .fixed.main button {
 	text-shadow: var(--text-shadow);
 	color: white;
@@ -91,8 +91,18 @@ sup {
 }
 
 /* sidenotes column */
+
+.sidenotes.list-wrapper {
+	position: fixed;
+    bottom: 0;
+    left: 0;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 110px;
+}
+
 ol.list {
-	padding: 0px;
+	padding: 1em;
 	margin: 1em;
 	/* border: 1px solid salmon; */
 }
@@ -104,9 +114,19 @@ ol.list {
 	font-family: var(--Karla);
 	padding-bottom: 10px;
 	font-size: var(--superscript-type);
+
+	position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 0;
 }
 .list li.active {
 	visibility: visible;
+}
+
+.list a {
+	color: white;
+	text-decoration: 2px solid white underline;
 }
 
 /* nav bar */
@@ -154,17 +174,25 @@ section.top {
     	/* border: 1px solid blue; */
 	}
 
+	.sidenotes.list-wrapper {
+		min-width: 250px;
+		max-width: 300px;
+		display: block;
+		position: relative;
+		height: 100%;
+	}
+
 	ol.list {
 		display: block;
-		padding-left: 40px;
+		padding: 0px 0px 0px 40px;
 		margin: 0;
 	}
 
-	.sidenotes {
-		min-width: 250px;
-		max-width: 300px;
+	.list li {
+		position: relative;
+		height: auto;
+		width: auto;
 	}
-
 }
 
 
