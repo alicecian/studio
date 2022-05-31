@@ -126,7 +126,11 @@ ol.list {
 
 .list a {
 	color: white;
-	text-decoration: 2px solid white underline;
+	/* text-decoration: 2px solid white underline; */
+	text-decoration-color: white;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	text-decoration-line: underline;	
 }
 
 /* nav bar */
