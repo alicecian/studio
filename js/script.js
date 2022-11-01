@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-console.log(body);
+// console.log(body);
 
 // match
 function Match(item, array) {
@@ -22,11 +22,11 @@ function Match(item, array) {
 }
 
 const sidenotes = document.querySelectorAll(".sidenote");
-console.log(sidenotes);
+// console.log(sidenotes);
 
 $(sidenotes).mouseover(function() {
     let index = $(this).attr("data-index-number");
-    console.log(index);
+    // console.log(index);
 
     $('.list li').each(function() {
         let sidenoteNum = $(this).attr("data-index-number");
