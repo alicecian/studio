@@ -34,9 +34,12 @@ footer {
 	/* border: 1px solid yellowgreen; */
 }
 
+span {padding-right: 5px;}
+
 button {
 	font-family: var(--Karla);
 	color: white;
+	transition: .25s opacity ease;
 }
 
 h3 {
