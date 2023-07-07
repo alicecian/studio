@@ -4,10 +4,11 @@
 	--Spectral: 'Spectral', serif;
 	--Karla: 'Karla', sans-serif;
 
-	--text-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+	/* --text-shadow: 0 0 7px rgba(0, 0, 0, 0.8); */
+	--text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
 	--large-type: 2rem;
 	--Karla-large-type: calc(var(--large-type)*0.9);
-	--superscript-type: calc(var(--Karla-large-type)/1.75);
+	--superscript-type: calc(var(--Karla-large-type)/2);
 
 	box-sizing: border-box;
 }
@@ -39,7 +40,7 @@ span {padding-right: 5px;}
 button {
 	font-family: var(--Karla);
 	color: white;
-	transition: .25s opacity ease;
+	transition: 1s opacity ease;
 }
 
 h3 {
@@ -49,7 +50,8 @@ h3 {
 
 a {
 	text-decoration: none;
-	transition: .25s opacity ease;
+	transition: 1s opacity ease;
+
 }
 
 .credit {
@@ -104,7 +106,12 @@ sup {
     height: 110px;
 }
 
-ol.list {
+ul {
+	list-style:none;
+};
+
+ul.list {
+	list-style-type: value;
 	padding: 1em;
 	margin: 1em;
 	/* border: 1px solid salmon; */
@@ -122,18 +129,23 @@ ol.list {
     width: 300px;
     height: 500px;
     top: 0;
+	opacity: 0;
+
+	transition: 1s all ease;
 }
 .list li.active {
+	opacity: 1;
 	visibility: visible;
 }
 
 .list a {
 	color: white;
-	/* text-decoration: 2px solid white underline; */
 	text-decoration-color: white;
 	text-decoration-style: solid;
-	text-decoration-thickness: 2px;
+	/* text-decoration-thickness: 2px; */
 	text-decoration-line: underline;	
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1.5px;
 }
 
 /* nav bar */
@@ -151,7 +163,7 @@ ol.list {
 	button:hover, 
 	a:hover {
 		opacity: 0.25;
-		transition: .25s opacity ease;
+		transition: 1s opacity ease;
 	}
 
 } 
